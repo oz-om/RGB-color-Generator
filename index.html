@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="wallpaper"></div>
+      <div class="rgb">
+        <div class="colors">
+          <div>
+            <label for="red">R</label>
+            <input type="range" id="red" min="0" max="255" value="0" />
+          </div>
+          <div>
+            <label for="green">G</label>
+            <input type="range" id="green" min="0" max="255" value="0" />
+          </div>
+          <div>
+            <label for="blue">B</label>
+            <input type="range" id="blue" min="0" max="255" value="0" />
+          </div>
+        </div>
+        <div class="opacity">
+          <input type="range" id="opacity" value="100" min="0" max="100" />
+          <label for="opacity">O</label>
+        </div>
+      </div>
+      <div class="output">
+        <input type="text" placeholder="text" id="result" value="rgb(0 0 0 / 100%)" readonly>
+        <div class="copy"><img src="photo/clipboard-outline.svg" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
