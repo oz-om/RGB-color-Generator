@@ -6,7 +6,7 @@ result = document.getElementById('result'),
 copy = document.querySelector('.copy');
 
 function changeColor(control) {
-  control.onchange = function() {
+  control.oninput = function() {
     result.value = `rgb(${red.value} ${green.value} ${blue.value} / ${opacity.value}%)`;
 
     document.documentElement.style.setProperty('--bg-Color', result.value);
